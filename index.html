@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="style.css"/>
+
+<body>
+    <div id="particles-js" style="display: flex;flex-flow: row;justify-content: center;align-items: center;">
+        <div id="card">
+            <h4
+                style="width: 100%;border: none;border-top-left-radius: 30px;border-top-right-radius: 30px;margin-top: 20px;text-shadow:  10px 10px 10px orange;">
+                محاسبه حق چاپ کتاب شما
+            </h4>
+            <form id="form">
+                <div style="display: flex;flex-flow: column;align-items: center;">
+                    <select id="make">
+                        <option disabled>موضوع کتاب شما</option>
+                        <option value="1">روانشناسی</option>
+                        <option value="2">علمی</option>
+                        <option value="3">رمان</option>
+                        <option value="4">انگیزشی</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h5>انتشارات مدنظرخودرا انتخاب کنید:</h5><br>
+                    فاطمی<input type="radio" name="smile" value="fatemi" checked class="ml-3 mr-1"/>
+                    اگاه<input type="radio" name="smile" value="agah" class="ml-3 mr-1"/>
+                    اریاناقلم<input type="radio" name="smile" value="ariyana" class="mr-1"/>
+                </div>
+
+                <div>
+                    <h5>حق کپی رایت:</h5><br>
+                    میفروشمش<input type="radio" name="holo" value="sell" checked class="mr-1 ml-3"/>
+                    میخامش:)<input type="radio" name="holo" value="want" class="mr-1"/>
+                </div>
+                <div>
+                    <select id="off" style="margin-bottom: 10px;">
+                        <option disabled>درصد تخفیف پیشنهادی</option>
+                        <option value="1">10%</option>
+                        <option value="2">20%</option>
+                        <option value="3">30%</option>
+                        <option value="4">40%</option>
+                    </select>
+                </div>
+                <img id="im" src="Ellipsis-1s-200px.gif" style="display: none;margin: auto;" />
+                <div id="result" style="margin-bottom: 10px;"></div>
+
+                <input type="submit" class="btn mohasebe" value="محاسبه" style="color: white;" />
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</html>
+</body>
